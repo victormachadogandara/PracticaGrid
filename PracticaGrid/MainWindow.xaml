@@ -1,0 +1,30 @@
+﻿<Window x:Class="PracticaGrid.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PracticaGrid"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <!--Definicion de columnas-->
+        <Grid.ColumnDefinitions>
+           <!--Cada columna Definition 
+            es una columna, casa columna 
+            debe establecer la anchura-->
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+
+        </Grid.RowDefinitions>
+        
+        <Button Grid.Column="0" VerticalAlignment="top" HorizontalAlignment="right">Boton Uno</Button>
+        <Button Grid.Column="1">Boton Numero Dos</Button>
+        <Button Grid.Column="2">Boton Tres</Button>
+    </Grid>
+</Window>
